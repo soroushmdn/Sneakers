@@ -6,8 +6,7 @@
 
   --dark-color: hsl(0, 0%, 10%);
   --body-color: linear-gradient(135deg, hsl(0, 0%, 70%), hsl(0, 0%, 30%));
-  --container-color: linear-gradient(135deg, hsl(0, 0%, 85%), hsl(0, 0%, 50%));
-  --hover-color: hsl(0, 0%, 75%);
+  --container-color: linear-gradient(135deg, hsl(0, 0%, 90%), hsl(0, 0%, 50%));
   --hover-color: linear-gradient(90deg, hsl(0, 0%, 100%), hsl(0, 0%, 80%));
   --white-color: hsl(0, 0%, 100%);
 
@@ -62,8 +61,11 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--normal-font-size);
   background: var(--body-color);
-
   color: var(--dark-color);
+}
+
+main {
+  overflow: hidden;
 }
 
 h1,
@@ -92,15 +94,16 @@ button {
   cursor: pointer;
 }
 
-
-main {
-  overflow: hidden;
-}
-  
 /*@@@@@@@@@@@@@  CSS reusable classes @@@@@@@@@@@@@ */
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: calc(100% - 3rem);
+}
+
 .section {
-  padding: 7rem 0 2rem;
+  padding: 5rem 0 2rem;
 }
 
 .section-title {
@@ -123,13 +126,7 @@ main {
   background-color: var(--dark-color);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: calc(100% - 3rem);
-}
-
-/*@@@@@@@@@@@@@  button @@@@@@@@@@@@@ */
+/*@@@@@@@@@@@@@ button @@@@@@@@@@@@@ */
 
 .button {
   display: inline-block;
@@ -181,17 +178,18 @@ main {
 }
 
 /*@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@*/
+
 .nav__toggle {
   display: none;
 }
 
 .header {
-  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+  background: transparent;
   transition: 0.3s;
 }
 
@@ -259,14 +257,18 @@ main {
 }
 
 /*@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@*/
+
+.home .container {
+  max-width: 992px;
+}
+
 .home__container {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-content: space-between;
-
-  padding-right: 5rem;
+  justify-content: center;
   padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 .home__subtitle {
@@ -289,11 +291,11 @@ main {
 }
 
 .home__sneaker {
-  position: relative;
   display: grid;
 }
 
 .home__shape {
+  position: relative;
   width: 400px;
   height: 400px;
   background-color: var(--dark-color);
@@ -303,18 +305,18 @@ main {
 
 .home__img {
   position: absolute;
-  top: -5rem;
-  left: -1rem;
+  top: -7rem;
+  left: -3rem;
 
-  width: 450px;
+  width: 500px;
   transform: rotate(-5deg);
-  max-width: unset;
+  max-width: initial;
 }
 
 /*@@@@@@@@@@@@@ FEATURED @@@@@@@@@@@@@*/
 
 .featured .swiper {
-  max-width: 992px;
+  max-width: 980px;
   /* becaus of swiperslide overflow */
   padding-top: 2.5rem;
 }
@@ -325,7 +327,7 @@ main {
 
 .featured .swiper-slide {
   /* becaus of swiperslide overflow */
-  position: unset;
+  position: initial;
 }
 
 .swiper-pagination-bullet {
@@ -339,10 +341,6 @@ main {
   border-radius: 3px;
 }
 
-.featured.section {
-  margin-top: 5rem;
-}
-
 .featured .section-title {
   margin-bottom: var(--mb-1);
 }
@@ -353,8 +351,9 @@ main {
   border-radius: 1rem;
   padding: 0 1.5rem;
   height: 340px;
-  width: 300px;
-  box-shadow: 0 0 5px hsla(0, 0%, 5%, 0.5);
+  width: 290px;
+  box-shadow: 0 0 2px hsl(0, 0%, 40%);
+  margin: 0 auto;
 }
 
 .featured__tag,
@@ -382,7 +381,7 @@ main {
   position: absolute;
   width: 200px;
   transform: rotate(0) translate(1.5rem, 3.5rem);
-  filter: drop-shadow(0 0 5px hsla(0, 0%, 5%, 0.5));
+  filter: drop-shadow(0 0 2px hsla(0, 0%, 20%));
 }
 
 .featured__data {
@@ -411,6 +410,7 @@ main {
 
 .featured__button {
   font-weight: var(--font-semi);
+  padding: 0.8rem 1.5rem;
   opacity: 0;
 }
 
@@ -527,6 +527,7 @@ main {
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 0 5px hsla(0, 0%, 5%, 0.5);
+  margin: 0 auto;
 
   display: grid;
 }
@@ -857,17 +858,6 @@ main {
   bottom: 5rem;
 }
 
-/*@@@@@@@@@@@@@ SCROLL BAR @@@@@@@@@@@@@*/
-::-webkit-scrollbar {
-  background-color: hsl(0, 0%, 50%);
-  width: 0.6rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 0%, 20%);
-  border-radius: 0.5rem;
-}
-
 /*@@@@@@@@@@@@@ SALE @@@@@@@@@@@@@*/
 
 .sale__container {
@@ -966,4 +956,20 @@ main {
 .page:hover {
   background: var(--dark-color);
   color: var(--white-color);
+}
+
+/*@@@@@@@@@@@@@ SCROLL BAR @@@@@@@@@@@@@*/
+
+::-webkit-scrollbar {
+  background-color: hsl(0, 0%, 80%);
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 40%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 20%);
 }
