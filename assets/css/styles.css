@@ -327,7 +327,7 @@ button {
 
 .featured .swiper-slide {
   /* becaus of swiperslide overflow */
-  position: initial;
+  position: static;
 }
 
 .swiper-pagination-bullet {
