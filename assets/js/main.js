@@ -17,11 +17,12 @@ navLinks.forEach((n) => {
 });
 
 /*@@@@@@@@ change header background @@@@@@@@*/
+
 const header = document.getElementById('header');
 window.addEventListener('scroll', scrollHeader);
 
 function scrollHeader() {
-  if (this.scrollY >= 100) {
+  if (this.scrollY >= 50) {
     header.classList.add('scroll-header');
   } else {
     header.classList.remove('scroll-header');
@@ -48,6 +49,7 @@ const featuredSwiper = new Swiper('.featured__swiper', {
   loop: 'true',
   slidesPerView: 'auto',
   centeredSlides: true,
+  grabCursor: true,
 
   pagination: {
     el: '.swiper-pagination',
@@ -56,7 +58,7 @@ const featuredSwiper = new Swiper('.featured__swiper', {
 
   breakpoints: {
     992: {
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
   },
 });
@@ -66,6 +68,7 @@ const womenSwiper = new Swiper('.women__swiper', {
   loop: 'true',
   slidesPerView: 'auto',
   centeredSlides: true,
+  grabCursor: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
