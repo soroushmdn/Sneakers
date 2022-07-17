@@ -56,16 +56,6 @@
     transform: translateY(7rem);
   }
 
-  /*@@@@@@@@@@@@@ WOMEN SNEAKERS @@@@@@@@@@@@@*/
-  .women__card {
-    width: 220px;
-    height: 240px;
-  }
-
-  .women__img {
-    width: 150px;
-  }
-
   /*@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@*/
 
   .collection__container {
@@ -87,6 +77,21 @@
   .collection .button {
     padding: 0.7rem 1.4rem;
     border-radius: 0.5rem;
+  }
+
+  /*@@@@@@@@@@@@@ WOMEN SNEAKERS @@@@@@@@@@@@@*/
+
+  .women .swiper {
+    max-width: 720px;
+  }
+
+  .women__card {
+    width: 220px;
+    height: 240px;
+  }
+
+  .women__img {
+    width: 150px;
   }
 
   /*@@@@@@@@@@@@@ NEW COLLECTION  @@@@@@@@@@@@@*/
@@ -162,12 +167,16 @@
 
   /*@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@*/
 
+  .collection .container {
+    max-width: 576px;
+  }
+
   .collection__container {
-    grid-template-columns: 80%;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
 
   /*@@@@@@@@@@@@@ NEW COLLECTION  @@@@@@@@@@@@@*/
+
   .new__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -177,7 +186,12 @@
     grid-column: 1/3;
   }
 
+  .new__img {
+    width: 180px;
+  }
+
   /*@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@*/
+
   .newsletter__container {
     grid-template-columns: max-content;
     padding: 3rem 1rem;
@@ -220,11 +234,13 @@
     width: 350px;
   }
 
-  /*@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@*/
+  /*@@@@@@@@@@@@@ FEATURED @@@@@@@@@@@@@*/
 
-  .collection__container {
-    grid-template-columns: 1fr;
+  .featured__card {
+    overflow: initial;
   }
+
+  /*@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@*/
 
   .collection__img {
     width: 190px;
@@ -245,20 +261,40 @@
     font-size: var(--small-font-size);
   }
 
-  /*@@@@@@@@@@@@@ NEW COLLECTION  @@@@@@@@@@@@@*/
-  .new__container {
-    grid-template-columns: 1fr;
+  .offer__img {
+    padding-right: 0.5rem;
   }
 
-  .new__card:nth-child(1) {
-    grid-row: initial;
-    grid-column: initial;
+  /*@@@@@@@@@@@@@ NEW COLLECTION  @@@@@@@@@@@@@*/
+
+  .new__container {
+    gap: 2rem 1rem;
+  }
+
+  .new__card {
+    padding: 2rem 1rem;
+  }
+
+  .new .button {
+    padding: 0.8rem;
+    font-size: 0.8rem;
   }
 
   /*@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@*/
 
-  .newsletter__form {
-    padding: 0.5rem;
+  .newsletter__container {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+
+  .newsletter__input {
+    width: 100%;
+  }
+
+  .newsletter .button {
+    font-size: 0.7rem;
+    padding: 1rem 0.3rem;
+    width: 120px;
   }
 
   /*@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@*/
@@ -266,9 +302,19 @@
   .footer__container {
     grid-template-columns: 1fr;
   }
+
+  /*@@@@@@@@@@@@@ SALE @@@@@@@@@@@@@*/
+
+  .pages {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 374px) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+
   /*@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@*/
 
   .home__container {
@@ -284,5 +330,58 @@
     top: -4rem;
     left: -2.5rem;
     width: 290px;
+  }
+
+  /*@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@*/
+
+  .collection__img {
+    width: 170px;
+  }
+
+  /*@@@@@@@@@@@@@ OFFER @@@@@@@@@@@@@*/
+
+  .offer__data {
+    padding: 3rem 0 3rem 1rem;
+  }
+
+  .offer__title {
+    font-size: 1.9rem;
+  }
+
+  .offer__img {
+    width: 120px;
+  }
+
+  /*@@@@@@@@@@@@@ NEW COLLECTION  @@@@@@@@@@@@@*/
+
+  .new__container {
+    grid-template-columns: 1fr;
+  }
+
+  .new__card:nth-child(1) {
+    grid-row: initial;
+    grid-column: initial;
+  }
+
+  /*@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@*/
+
+  .newsletter__container {
+    padding: 3rem 1rem;
+  }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
   }
 }
