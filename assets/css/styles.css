@@ -991,8 +991,8 @@ button {
 }
 
 .preloader__img {
-  width: 80px;
-  filter: drop-shadow(0 0 3px hsla(0, 0%, 10%));
+  width: 100px;
+  filter: drop-shadow(0 0 3px hsla(0, 0%, 10%)) contrast(70%);
   animation: preloader 4s infinite;
 }
 
