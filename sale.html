@@ -16,15 +16,26 @@
       rel="stylesheet"
     />
 
+    <!-- @@@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@@ -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <!-- @@@@@@@@@@@@@ CSS @@@@@@@@@@@@@ -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <!-- @@@@@@@@@@@@@ RESPONSIVE @@@@@@@@@@@@@ -->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
-    <title>SNEAKERS | Sale</title>
+    <title>SNEAKERS</title>
   </head>
   <body>
+    <!-- @@@@@@@@@@@@@@@@@@@ preloader @@@@@@@@@@@@@@@@@@@@ -->
+    <div class="preloader" id="preloader">
+      <img src="./assets/img/preloader.png" alt="" class="preloader__img" />
+    </div>
+
     <!--@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@-->
     <header class="header" id="header">
       <div class="container">
@@ -41,19 +52,19 @@
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="./index.html#home" class="nav__link">Home</a>
+                <a href="#home" class="nav__link">Home</a>
               </li>
               <li class="nav__item">
-                <a href="./index.html#featured" class="nav__link">Featured</a>
+                <a href="#featured" class="nav__link">Featured</a>
               </li>
               <li class="nav__item">
-                <a href="./index.html#women" class="nav__link">Women</a>
+                <a href="#women" class="nav__link">Women</a>
               </li>
               <li class="nav__item">
-                <a href="./index.html#new" class="nav__link">New</a>
+                <a href="#new" class="nav__link">New</a>
               </li>
               <li class="nav__item">
-                <a href="#sale" class="nav__link">Sale</a>
+                <a href="./sale.html" class="nav__link">Sale</a>
               </li>
             </ul>
           </div>
@@ -64,176 +75,373 @@
     </header>
 
     <main>
-      <section class="sale section" id="sale">
+      <!--@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@-->
+      <section class="home" id="home">
         <div class="container">
-          <h2 class="section-title">All products</h2>
-
-          <div class="sale__container">
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/new2.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/new3.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/new4.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/new5.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/women1.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/women2.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/women3.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/women4.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/featured1.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/featured2.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/featured3.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
-            </div>
-            <div class="sale__card">
-              <div class="sale__tag">sale</div>
-              <img src="./assets/img/featured4.png" alt="" class="sale__img" />
-              <div class="sale__data">
-                <h3 class="sale__title">Nike Air Max</h3>
-                <span class="sale__price">$159.99</span>
-              </div>
-              <a href="#" class="sale__button button">
-                <span class="button__text">Buy now</span>
+          <div class="home__container">
+            <div class="home__data">
+              <span class="home__subtitle">New in</span>
+              <h1 class="home__title">
+                YEEZY BOOST <br />
+                SPLY - 350
+              </h1>
+              <p class="home__description">
+                Explore the new collections of sneakers
+              </p>
+              <a href="#" class="button">
+                <span class="button__text">Explore now</span>
                 <div class="button__hover-left"></div>
                 <div class="button__hover-right"></div>
               </a>
             </div>
 
-            <div class="pages">
-              <span class="page">1</span>
-              <span class="page">2</span>
-              <span class="page">3</span>
-              <span class="page">4</span>
-              <span class="page">5</span>
-              <span class="page"><i class="bx bxs-chevron-right"></i></span>
+            <div class="home__sneaker">
+              <div class="home__shape">
+                <img src="./assets/img/imghome.png" alt="" class="home__img" />
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!--@@@@@@@@@@@@@ FEATURED @@@@@@@@@@@@@-->
+      <section class="featured section" id="featured">
+        <div class="container">
+          <h2 class="section-title">featured</h2>
+
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/img/featured1.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Max</h3>
+                  <span class="featured__price">$159.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/img/featured2.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Run</h3>
+                  <span class="featured__price">$149.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/img/featured3.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Mid</h3>
+                  <span class="featured__price">$169.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="featured__card swiper-slide">
+                <div class="featured__tag">sale</div>
+                <img
+                  src="./assets/img/featured4.png"
+                  alt=""
+                  class="featured__img"
+                />
+                <div class="featured__data">
+                  <h3 class="featured__title">Nike Air Fly</h3>
+                  <span class="featured__price">$199.99</span>
+                  <p class="featured__description">
+                    Nike Air Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="button featured__button">
+                    <span class="button__text">Buy now</span>
+                    <div class="button__hover-left"></div>
+                    <div class="button__hover-right"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@-->
+      <section class="collection section">
+        <div class="container">
+          <div class="collection__container">
+            <div class="collection__card">
+              <div class="collection__data">
+                <h2 class="collection__title">Nike</h2>
+                <p class="collection__description">New collection 2022</p>
+                <a href="#" class="button">
+                  <span class="button__text">Buy now</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+              <img
+                src="./assets/img/collection1.png"
+                alt=""
+                class="collection__img"
+              />
+            </div>
+
+            <div class="collection__card">
+              <div class="collection__data">
+                <h2 class="collection__title">Addidas</h2>
+                <p class="collection__description">New collection 2022</p>
+                <a href="#" class="button">
+                  <span class="button__text">Buy now</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+              <img
+                src="./assets/img/collection2.png"
+                alt=""
+                class="collection__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--@@@@@@@@@@@@@ WOMEN SNEAKERS @@@@@@@@@@@@@-->
+      <section class="women section" id="women">
+        <div class="container">
+          <h2 class="section-title">women sneakers</h2>
+
+          <div class="women__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="women__card swiper-slide">
+                <div class="women__tag">AIR ZOOM PEGASUS</div>
+                <img src="./assets/img/women1.png" alt="" class="women__img" />
+                <div class="women__content">
+                  <a href="#" class="women__link">
+                    <i class="bx bx-cart-alt"></i
+                  ></a>
+
+                  <div class="women__prices">
+                    <span class="women__discount">$990.00</span>
+                    <span class="women__price">$750.00</span>
+                  </div>
+
+                  <a href="#" class="women__link"
+                    ><i class="bx bx-heart"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="women__card swiper-slide">
+                <div class="women__tag">AIR ZOOM PEGASUS</div>
+                <img src="./assets/img/women2.png" alt="" class="women__img" />
+                <div class="women__content">
+                  <a href="#" class="women__link"
+                    ><i class="bx bx-heart"></i
+                  ></a>
+
+                  <div class="women__prices">
+                    <span class="women__discount">$990.00</span>
+                    <span class="women__price">$750.00</span>
+                  </div>
+
+                  <a href="#" class="women__link">
+                    <i class="bx bx-cart-alt"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="women__card swiper-slide">
+                <div class="women__tag">AIR ZOOM PEGASUS</div>
+                <img src="./assets/img/women3.png" alt="" class="women__img" />
+                <div class="women__content">
+                  <a href="#" class="women__link"
+                    ><i class="bx bx-heart"></i
+                  ></a>
+
+                  <div class="women__prices">
+                    <span class="women__discount">$990.00</span>
+                    <span class="women__price">$750.00</span>
+                  </div>
+
+                  <a href="#" class="women__link">
+                    <i class="bx bx-cart-alt"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="women__card swiper-slide">
+                <div class="women__tag">AIR ZOOM PEGASUS</div>
+                <img src="./assets/img/women4.png" alt="" class="women__img" />
+                <div class="women__content">
+                  <a href="#" class="women__link"
+                    ><i class="bx bx-heart"></i
+                  ></a>
+
+                  <div class="women__prices">
+                    <span class="women__discount">$990.00</span>
+                    <span class="women__price">$750.00</span>
+                  </div>
+
+                  <a href="#" class="women__link">
+                    <i class="bx bx-cart-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--@@@@@@@@@@@@@ OFFER @@@@@@@@@@@@@-->
+      <section class="offer section">
+        <div class="container">
+          <div class="offer__container">
+            <div class="offer__data">
+              <h2 class="offer__title">50% OFF</h2>
+              <p class="offer__description">in Addidas Superstar sneakers</p>
+              <a href="#" class="button">
+                <span class="button__text">Shop now</span>
+                <div class="button__hover-left"></div>
+                <div class="button__hover-right"></div>
+              </a>
+            </div>
+
+            <img src="./assets/img/offert.png" alt="" class="offer__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--@@@@@@@@@@@@@ NEW COLLECTION @@@@@@@@@@@@@-->
+      <section class="new section" id="new">
+        <div class="container">
+          <h2 class="section-title">new collection</h2>
+
+          <div class="new__container">
+            <div class="new__card">
+              <img
+                src="./assets/img/new1.png"
+                alt=""
+                class="new__img-arrivalls"
+              />
+              <div class="new__data">
+                <h2 class="new__title">New Arrivalls</h2>
+                <span class="new__price">From $79.99</span>
+                <a href="#" class="button">
+                  <span class="button__text">view collection</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="new__card">
+              <img src="./assets/img/new2.png" alt="" class="new__img" />
+              <div class="new__cart">
+                <a href="#" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+            <div class="new__card">
+              <img src="./assets/img/new3.png" alt="" class="new__img" />
+              <div class="new__cart">
+                <a href="#" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+            <div class="new__card">
+              <img src="./assets/img/new4.png" alt="" class="new__img" />
+              <div class="new__cart">
+                <a href="#" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+            <div class="new__card">
+              <img src="./assets/img/new5.png" alt="" class="new__img" />
+              <div class="new__cart">
+                <a href="#" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@-->
+      <section class="newsletter section">
+        <div class="container">
+          <div class="newsletter__container">
+            <div class="newsletter__data">
+              <h2 class="newsletter__title">
+                Subscribe And Get <br />
+                10% OFF
+              </h2>
+              <p class="newsletter__description">
+                Get 10% discount for all products
+              </p>
+            </div>
+
+            <form action="" class="newsletter__form">
+              <input
+                type="email"
+                placeholder="@email.com"
+                class="newsletter__input"
+              />
+              <button href="#" class="button">Subscribe</button>
+            </form>
           </div>
         </div>
       </section>
@@ -318,8 +526,11 @@
 
       <p class="footer__copy">
         © 2022 coded by
-        <a href="https://github.com/soroushmdn">Soroush Karimi.</a> <br />
-        design from Bedimcode youtube channel.
+        <a href="https://github.com/soroushmdn" target="_blank"
+          >Soroush Karimi.</a
+        >
+
+        Design from Bedimcode.
       </p>
     </footer>
 
