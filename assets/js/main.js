@@ -4,7 +4,7 @@ onload = () => {
 
   setTimeout(() => {
     preloader.style.display = 'none';
-  }, 4000);
+  }, 3500);
 };
 
 /*@@@@@@@@ show & remove menu @@@@@@@@*/
