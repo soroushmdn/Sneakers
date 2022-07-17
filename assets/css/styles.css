@@ -984,8 +984,8 @@ button {
 
   background: linear-gradient(
     135deg,
-    hsla(0, 0%, 70%, 0.2),
-    hsla(0, 0%, 30%, 0.2)
+    hsla(0, 0%, 70%, 0.4),
+    hsla(0, 0%, 30%, 0.4)
   );
   backdrop-filter: blur(20px);
 }
