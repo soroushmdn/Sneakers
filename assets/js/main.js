@@ -1,3 +1,12 @@
+//  @@@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@@
+onload = () => {
+  const preloader = document.getElementById('preloader');
+
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 4000);
+};
+
 /*@@@@@@@@ show & remove menu @@@@@@@@*/
 
 const navMenu = document.getElementById('nav-menu'),
