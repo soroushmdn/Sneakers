@@ -5,8 +5,9 @@
   --header-height: 4rem;
 
   --dark-color: hsl(0, 0%, 10%);
-  --body-color: linear-gradient(135deg, hsl(0, 0%, 70%), hsl(0, 0%, 30%));
-  --container-color: linear-gradient(135deg, hsl(0, 0%, 90%), hsl(0, 0%, 50%));
+  --body-color: hsl(0, 0%, 85%);
+  --section-color: linear-gradient(135deg, hsl(0, 0%, 70%), hsl(0, 0%, 30%));
+  --container-color: linear-gradient(135deg, hsl(0, 0%, 80%), hsl(0, 0%, 50%));
   --hover-color: linear-gradient(90deg, hsl(0, 0%, 100%), hsl(0, 0%, 80%));
   --white-color: hsl(0, 0%, 100%);
 
@@ -60,7 +61,8 @@
 body {
   font-family: var(--body-font-family);
   font-size: var(--normal-font-size);
-  background: var(--body-color);
+
+  background: hsl(0, 0%, 85%);
   color: var(--dark-color);
 }
 
@@ -257,6 +259,9 @@ button {
 }
 
 /*@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@*/
+.home {
+  background: var(--section-color);
+}
 
 .home .container {
   max-width: 992px;
@@ -352,7 +357,7 @@ button {
   padding: 0 1.5rem;
   height: 340px;
   width: 290px;
-  box-shadow: 0 0 2px hsl(0, 0%, 40%);
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
   margin: 0 auto;
 }
 
@@ -446,7 +451,7 @@ button {
   border-radius: 1rem;
   overflow: hidden;
   padding: 0 0 1.2rem 1.5rem;
-  box-shadow: 0 0 2px hsl(0, 0%, 40%);
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
 
   display: flex;
   height: 350px;
@@ -519,7 +524,7 @@ button {
   background: var(--container-color);
   border-radius: 1rem;
   padding: 1.5rem;
-  box-shadow: 0 0 2px hsl(0, 0%, 40%);
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
   margin: 0 auto;
 
   display: grid;
@@ -605,7 +610,7 @@ button {
 .offer__container {
   background: var(--container-color);
   border-radius: 1rem;
-  box-shadow: 0 0 2px hsl(0, 0%, 40%);
+  box-shadow: 0 0px 20px hsl(0, 0%, 30%);
 
   display: flex;
   justify-content: center;
@@ -648,7 +653,7 @@ button {
   overflow: hidden;
   background: var(--container-color);
   border-radius: 1rem;
-  box-shadow: 0 0 2px hsl(0, 0%, 40%);
+  box-shadow: 0 2px 5px hsl(0, 0%, 40%);
 
   display: grid;
   justify-content: center;
@@ -699,6 +704,9 @@ button {
 }
 
 /*@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@*/
+.newsletter.section {
+  padding-bottom: 5rem;
+}
 
 .newsletter__container {
   display: grid;
@@ -749,6 +757,10 @@ button {
 }
 
 /*@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@*/
+
+.footer {
+  background: var(--section-color);
+}
 
 .footer__container {
   display: grid;
@@ -966,7 +978,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 25%);
 }
 
 /*@@@@@@@@@@@@@@@@@ preloader @@@@@@@@@@@@@@@@@*/
