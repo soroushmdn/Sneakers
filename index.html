@@ -33,9 +33,9 @@
   <body>
     <!-- @@@@@@@@@@@@@@@@@@@ preloader @@@@@@@@@@@@@@@@@@@@ -->
 
-    <div class="preloader" id="preloader">
+    <!-- <div class="preloader" id="preloader">
       <img src="./assets/img/preloader.png" alt="" class="preloader__img" />
-    </div>
+    </div> -->
 
     <!--@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@-->
 
@@ -82,24 +82,52 @@
         <div class="container">
           <div class="home__container">
             <div class="home__data">
-              <span class="home__subtitle">New in</span>
-              <h1 class="home__title">
-                YEEZY BOOST <br />
-                SPLY - 350
-              </h1>
+              <span class="home__subtitle">Nike</span>
+              <h1 class="home__title">Air Max Motion 2</h1>
               <p class="home__description">
-                Explore the new collections of sneakers
+                Rule the streets in the Nike Air Max Motion 2 .They blend
+                performance details with streetwear.
               </p>
-              <a href="#" class="button">
-                <span class="button__text">Explore now</span>
-                <div class="button__hover-left"></div>
-                <div class="button__hover-right"></div>
-              </a>
+
+              <div class="home__actions">
+                <div class="home__sizes">
+                  <span class="home__size active">40</span>
+                  <span class="home__size">41</span>
+                  <span class="home__size">42</span>
+                </div>
+
+                <div class="home__amounts">
+                  <span>
+                    <i class="bx bx-minus"></i>
+                  </span>
+                  <span class="home__amount-num">1</span>
+                  <span>
+                    <i class="bx bx-plus"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="home__price">
+                <span class="home__price-num">$99.00</span>
+                <a href="#" class="button home__price-btn">
+                  <span class="button__text">Add to cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
             </div>
 
             <div class="home__sneaker">
-              <div class="home__shape">
-                <img src="./assets/img/imghome.png" alt="" class="home__img" />
+              <div class="home__shape black active">
+                <img src="./assets/img/imghome-black.png" class="home__img" />
+              </div>
+              <div class="home__shape pink">
+                <img src="./assets/img/imghome-pink.png" class="home__img" />
+              </div>
+
+              <div class="home__color-buttons">
+                <span class="home__color-button black active" id="black"></span>
+                <span class="home__color-button pink" id="pink"></span>
               </div>
             </div>
           </div>
