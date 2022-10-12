@@ -134,23 +134,23 @@ const womenSwiper = new Swiper('.women__swiper', {
 
 //  @@@@@@@@@@@@@@@@@@ scrollrevealjs.org @@@@@@@@@@@@@@@@@@
 
-// const sr = ScrollReveal({
-//   origin: 'top',
-//   distance: '50px',
-//   duration: 2500,
-//   delay: 400,
-// });
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '50px',
+  duration: 2500,
+  delay: 400,
+});
 
-// sr.reveal(`.swiper , .home__container`);
-// sr.reveal(
-//   `.new__card ,.footer__content ,.footer__social ,.sale__card ,.pages`,
-//   {
-//     interval: 200,
-//   }
-// );
-// sr.reveal(`.collection__data ,.offer__data ,.newsletter__data`, {
-//   origin: 'left',
-// });
-// sr.reveal(`.collection__img ,.offer__img ,.newsletter__form`, {
-//   origin: 'right',
-// });
+sr.reveal(`.swiper , .home__container`);
+sr.reveal(
+  `.new__card ,.footer__content ,.footer__social ,.sale__card ,.pages`,
+  {
+    interval: 200,
+  }
+);
+sr.reveal(`.collection__data ,.offer__data ,.newsletter__data`, {
+  origin: 'left',
+});
+sr.reveal(`.collection__img ,.offer__img ,.newsletter__form`, {
+  origin: 'right',
+});
