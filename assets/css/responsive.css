@@ -1,12 +1,35 @@
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   /*@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@*/
-
-  .home__subtitle {
-    margin-bottom: var(--mb-5);
+  .home__title {
+    font-size: 2.3rem;
   }
 
   .home__description {
     margin-bottom: var(--mb-2);
+  }
+
+  .home__sizes {
+    gap: 0.5rem;
+  }
+
+  .home__size {
+    width: 35px;
+    height: 35px;
+  }
+
+  .home__amounts span,
+  .home__amounts i {
+    width: 35px;
+    height: 35px;
+  }
+
+  .home__price-btn {
+    padding: 1rem 2rem;
+  }
+
+  .home__sneaker {
+    width: 300px;
+    height: 300px;
   }
 
   .home__shape {
@@ -15,9 +38,8 @@
   }
 
   .home__img {
-    top: -6rem;
     left: -4rem;
-    width: 410px;
+    width: 380px;
   }
 
   /*@@@@@@@@@@@@@ FEATURED @@@@@@@@@@@@@*/
@@ -151,18 +173,34 @@
   }
 
   /*@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@*/
-
   .home__container {
-    grid-template-columns: max-content;
-    gap: 3rem;
+    grid-template-columns: 1fr;
   }
 
   .home__data {
+    width: 100%;
     order: 2;
   }
 
-  .home__description {
-    font-size: initial;
+  .home__sneaker {
+    width: 100%;
+  }
+
+  .home__shape {
+    right: 0;
+    margin: auto;
+  }
+
+  .home__color-buttons {
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: initial;
+    margin: auto;
+    flex-direction: column;
   }
 
   /*@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@*/
@@ -205,35 +243,41 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   /*@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@*/
-
   .home__container {
-    gap: 2rem;
-    padding-top: 7rem;
-    padding-bottom: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
   }
 
-  .home__title {
-    font-size: 2.5rem;
-    margin-bottom: 0.7rem;
+  .home__actions {
+    margin-bottom: var(--mb-2);
   }
 
-  .home__description {
-    margin-bottom: var(--mb-1-5);
+  .home__sneaker {
+    height: 240px;
   }
 
   .home__shape {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
   }
 
   .home__img {
-    top: -6rem;
-    left: -3.5rem;
-    width: 350px;
+    top: 1.5rem;
+    left: -3.3rem;
+    width: 300px;
   }
 
+  .home__color-buttons {
+    width: 10px;
+    height: 30px;
+  }
+
+  .home__color-button {
+    width: 10px;
+    height: 10px;
+  }
   /*@@@@@@@@@@@@@ FEATURED @@@@@@@@@@@@@*/
 
   .featured__card {
@@ -316,20 +360,23 @@
   }
 
   /*@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@*/
+  .home__title {
+    font-size: 2rem;
+  }
 
-  .home__container {
-    grid-template-columns: 1fr;
+  .home__sneaker {
+    height: 200px;
   }
 
   .home__shape {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
   }
 
   .home__img {
-    top: -4rem;
+    top: 1.5rem;
     left: -2.5rem;
-    width: 290px;
+    width: 250px;
   }
 
   /*@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@*/
