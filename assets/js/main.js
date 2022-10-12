@@ -4,7 +4,7 @@ onload = () => {
 
   setTimeout(() => {
     preloader.style.display = 'none';
-  }, 3500);
+  }, 3000);
 };
 
 /*@@@@@@@@ show & remove menu @@@@@@@@*/
@@ -37,6 +37,53 @@ function scrollHeader() {
     header.classList.remove('scroll-header');
   }
 }
+
+//  @@@@@@ change home shapes when click on color buttons @@@@@@
+let colorButtons = document.querySelector('.home__color-buttons');
+
+colorButtons.addEventListener('click', (e) => {
+  if (e.target.classList.contains('home__color-button')) {
+    colorButtons.querySelector('.active').classList.remove('active');
+    e.target.classList.add('active');
+
+    document.querySelector('.home__shape.active').classList.remove('active');
+    document
+      .querySelector(`.home__shape.${e.target.id}`)
+      .classList.add('active');
+  }
+});
+
+//  @@@@@@@@@@ change shoe sizes on home section @@@@@@@@@@
+const shoeSizes = document.querySelectorAll('.home__size');
+
+shoeSizes.forEach((e) => {
+  e.addEventListener('click', function () {
+    shoeSizes.forEach((e) => {
+      e.classList.remove('active');
+      this.classList.add('active');
+    });
+  });
+});
+
+//  @@@@@@@@@@ home increment & decrement button @@@@@@@@@@
+const plusButton = document.querySelector('.home__amounts .bx-plus');
+const minusButton = document.querySelector('.home__amounts .bx-minus');
+const homeAmountNumber = document.querySelector(
+  '.home__amounts .home__amount-num'
+);
+let a = 1;
+
+plusButton.addEventListener('click', () => {
+  a++;
+  homeAmountNumber.innerText = a;
+});
+
+minusButton.addEventListener('click', () => {
+  if (a > 1) {
+    a--;
+    homeAmountNumber.innerText = a;
+  }
+});
 
 //  @@@@@@@@@@@@@@@@@@ show scrollup @@@@@@@@@@@@@@@@@@
 
@@ -87,23 +134,23 @@ const womenSwiper = new Swiper('.women__swiper', {
 
 //  @@@@@@@@@@@@@@@@@@ scrollrevealjs.org @@@@@@@@@@@@@@@@@@
 
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '50px',
-  duration: 2500,
-  delay: 400,
-});
+// const sr = ScrollReveal({
+//   origin: 'top',
+//   distance: '50px',
+//   duration: 2500,
+//   delay: 400,
+// });
 
-sr.reveal(`.swiper , .home__container`);
-sr.reveal(
-  `.new__card ,.footer__content ,.footer__social ,.sale__card ,.pages`,
-  {
-    interval: 200,
-  }
-);
-sr.reveal(`.collection__data ,.offer__data ,.newsletter__data`, {
-  origin: 'left',
-});
-sr.reveal(`.collection__img ,.offer__img ,.newsletter__form`, {
-  origin: 'right',
-});
+// sr.reveal(`.swiper , .home__container`);
+// sr.reveal(
+//   `.new__card ,.footer__content ,.footer__social ,.sale__card ,.pages`,
+//   {
+//     interval: 200,
+//   }
+// );
+// sr.reveal(`.collection__data ,.offer__data ,.newsletter__data`, {
+//   origin: 'left',
+// });
+// sr.reveal(`.collection__img ,.offer__img ,.newsletter__form`, {
+//   origin: 'right',
+// });
